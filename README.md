@@ -1,4 +1,4 @@
-# String Utilities NPM Package
+# Utilities Methods NPM Package
 
 Welcome to the **String Utilities** package! This library provides a set of useful JavaScript methods for string manipulation, making it easier to work with text data in your projects.
 
