@@ -10,12 +10,45 @@ You can install the package using npm:
 npm install util-methods
 ```
 
+Import the method into your file and execute it once the DOM is fully loaded.
+
+### Vanilla JS
+
+```sh
+const { methodName } = require('util-methods');
+document.addEventListener('DOMContentLoaded', function() {
+    utilMethods();
+});
+```
+
+### React Class Component
+
+```sh
+ componentDidMount(){
+      utilMethods();
+    }
+```
+### React Functional Component
+
+```sh
+   useEffect(()=>{
+        utilMethods();       
+    },[])
+```
+### Vue Component
+
+```sh
+mounted() {
+  this.utilMethods();
+}
+```
+
 ### reverse(str: string): string
 Reverses the input string.
 
 Example:
 ```sh
-import { reverse } from 'string-utilities';
+import utilMethods from 'util-methods';
 
 console.log(reverse('hello')); // 'olleh'
 ```
@@ -24,7 +57,7 @@ Converts a string into camelCase format
 
 Example
 ```sh
-import { camelCase } from 'string-utilities';
+import utilMethods from 'util-methods';
 
 console.log(camelCase('hello world')); // 'helloWorld'
 ```
@@ -33,7 +66,7 @@ Checks if the input string is a palindrome (reads the same forwards and backward
 
 Example
 ```sh
-import { isPalindrome } from 'string-utilities';
+import utilMethods from 'util-methods';
 
 console.log(isPalindrome('racecar')); // true
 console.log(isPalindrome('hello'));   // false
@@ -43,7 +76,7 @@ console.log(isPalindrome('hello'));   // false
 Removes all instances of a specified symbol from the input string.
 
 ```sh
-import { stripSymbol } from 'string-utilities';
+import utilMethods from 'util-methods';
 
 console.log(stripSymbol('hello@world!', '@')); // 'helloworld!'
 ```
@@ -54,7 +87,7 @@ Generates a random string of the specified length.
 Example
 
 ```sh
-import { generateRandomString } from 'string-utilities';
+import utilMethods from 'util-methods';
 
 console.log(generateRandomString(10)); // 'a1B2c3D4e5' (example output)
 ```
